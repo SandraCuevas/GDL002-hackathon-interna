@@ -33,3 +33,107 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+//Buttons
+
+document.getElementById("select").addEventListener("change", (event) => {
+  let filterMood = getMoviesbyDefaultMood(mood, event.target.value);
+  document.getElementById('selectResults').innerHTML= movieInfoLayout(filterMood);
+  
+  });
+
+  function passRecomendation1(){
+    document.getElementById("down").style.display="none";
+    document.getElementById("powerUp").style.display="block";
+    document.getElementById("doIt").style.display="block";
+    document.getElementById("appeal").style.display="block";
+    document.getElementById("emotional").style.display="block";
+    document.getElementById("sensitive").style.display="block";
+    document.getElementById("irritable").style.display="block";
+    document.getElementById("irritable").style.display="block";
+  }
+  document.getElementsByClassName("marker mfirst timeline-icon one").addEventListener("click", passRecomendation1);
+
+  function passRecomendation2(){
+    document.getElementById("down").style.display="block";
+    document.getElementById("powerUp").style.display="none";
+    document.getElementById("doIt").style.display="block";
+    document.getElementById("appeal").style.display="block";
+    document.getElementById("emotional").style.display="block";
+    document.getElementById("sensitive").style.display="block";
+    document.getElementById("irritable").style.display="block";
+    document.getElementById("irritable").style.display="block";
+  }
+  document.getElementsByClassName("marker m2 timeline-icon two").addEventListener("click", passRecomendation2);
+
+  function passRecomendation3(){
+    document.getElementById("down").style.display="block";
+    document.getElementById("powerUp").style.display="block";
+    document.getElementById("doIt").style.display="none";
+    document.getElementById("appeal").style.display="block";
+    document.getElementById("emotional").style.display="block";
+    document.getElementById("sensitive").style.display="block";
+    document.getElementById("irritable").style.display="block";
+    document.getElementById("irritable").style.display="block";
+  }
+  document.getElementsByClassName("marker m3 timeline-icon three").addEventListener("click", passRecomendation3);
+
+  function passRecomendation4(){
+    document.getElementById("down").style.display="block";
+    document.getElementById("powerUp").style.display="block";
+    document.getElementById("doIt").style.display="block";
+    document.getElementById("appeal").style.display="none";
+    document.getElementById("emotional").style.display="block";
+    document.getElementById("sensitive").style.display="block";
+    document.getElementById("irritable").style.display="block";
+    document.getElementById("irritable").style.display="block";
+  }
+  document.getElementsByClassName("marker m4 timeline-icon four").addEventListener("click", passRecomendation4);
+
+  function passRecomendation5(){
+    document.getElementById("down").style.display="block";
+    document.getElementById("powerUp").style.display="block";
+    document.getElementById("doIt").style.display="block";
+    document.getElementById("appeal").style.display="block";
+    document.getElementById("emotional").style.display="none";
+    document.getElementById("sensitive").style.display="block";
+    document.getElementById("irritable").style.display="block";
+    document.getElementById("irritable").style.display="block";
+  }
+  document.getElementsByClassName("marker m5 timeline-icon five").addEventListener("click", passRecomendation5);
+
+  function passRecomendation6(){
+    document.getElementById("down").style.display="block";
+    document.getElementById("powerUp").style.display="block";
+    document.getElementById("doIt").style.display="block";
+    document.getElementById("appeal").style.display="block";
+    document.getElementById("emotional").style.display="block";
+    document.getElementById("sensitive").style.display="none";
+    document.getElementById("irritable").style.display="block";
+    document.getElementById("irritable").style.display="block";
+  }
+  document.getElementsByClassName("marker m6 timeline-icon six").addEventListener("click", passRecomendation6);
+
+  function passRecomendation7(){
+    document.getElementById("down").style.display="block";
+    document.getElementById("powerUp").style.display="block";
+    document.getElementById("doIt").style.display="block";
+    document.getElementById("appeal").style.display="block";
+    document.getElementById("emotional").style.display="block";
+    document.getElementById("sensitive").style.display="block";
+    document.getElementById("irritable").style.display="none";
+    document.getElementById("irritable").style.display="block";
+  }
+  document.getElementsByClassName("marker m7 timeline-icon seven").addEventListener("click", passRecomendation7);
+
+  function passRecomendation8(){
+    document.getElementById("down").style.display="block";
+    document.getElementById("powerUp").style.display="block";
+    document.getElementById("doIt").style.display="block";
+    document.getElementById("appeal").style.display="block";
+    document.getElementById("emotional").style.display="block";
+    document.getElementById("sensitive").style.display="block";
+    document.getElementById("irritable").style.display="block";
+    document.getElementById("irritable").style.display="none";
+  }
+  document.getElementsByClassName("marker mlast timeline-icon eight").addEventListener("click", passRecomendation8);

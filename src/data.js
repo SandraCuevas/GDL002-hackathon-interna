@@ -1,4 +1,5 @@
 const moviesForMoodies = MOVIES.dataMovies;
+
 const suggestionResults = document.querySelector('#suggestionResults');
 
 
@@ -14,7 +15,7 @@ const zen = [moviesForMoodies[13],moviesForMoodies[15]];
 
 
 //Función para obtener películas
-const getMoviesbyDefaultMood = (mood) => {
+getMoviesbyDefaultMood = (mood) => {
     
     console.log(mood);
     switch (mood) {
@@ -52,6 +53,7 @@ const getMoviesbyDefaultMood = (mood) => {
             break;
     }
 };  
+
 
 //Funcion para mostrar la informacion de cada película
 const movieInfoLayout = (data) => {
