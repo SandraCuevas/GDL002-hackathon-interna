@@ -6,10 +6,10 @@ const suggestionResults = document.querySelector('#suggestionResults');
 //Arrays para cada mood
 const down = [moviesForMoodies[0],moviesForMoodies[1]];
 const powerUp = [moviesForMoodies[2],moviesForMoodies[3]];
-const doIt = [moviesForMoodies[4],moviesForMoodies[11]];
+//const doIt = [moviesForMoodies[4],moviesForMoodies[11]];
 const appeal = [moviesForMoodies[5],moviesForMoodies[14]];
 const emotional = [moviesForMoodies[8],moviesForMoodies[12]];
-const sensitive = [moviesForMoodies[6],moviesForMoodies[7]];
+//const sensitive = [moviesForMoodies[6],moviesForMoodies[7]];
 const irritable = [moviesForMoodies[9],moviesForMoodies[10]];
 const zen = [moviesForMoodies[13],moviesForMoodies[15]];
 
@@ -27,9 +27,9 @@ getMoviesbyDefaultMood = (mood) => {
             movieInfoLayout(powerUp);
             break;
 
-        case 'doIt':
+        /*case 'doIt':
           movieInfoLayout(doIt);
-          break;
+          break;*/
           
         case 'appeal':
             movieInfoLayout(appeal);
@@ -39,9 +39,9 @@ getMoviesbyDefaultMood = (mood) => {
           movieInfoLayout(emotional);
           break;
           
-        case 'sensitive':
+        /*case 'sensitive':
             movieInfoLayout(sensitive);
-            break;
+            break;*/
 
         case 'irritable':
           movieInfoLayout(irritable);

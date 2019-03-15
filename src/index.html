@@ -2,6 +2,12 @@
 
 <html>
 	<head>
+		<link href="https://postimg.cc/gallery/3ezod89bk/">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<title>Movies4Moodies</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -9,6 +15,18 @@
 		
 	</head>
 	<body class="is-preload">
+
+			<div class="container">
+
+					<div class="row">
+						<div id="boot" class="col-3 col-lg-12 col-md-4">Column</div>
+						<div id="boot1" class="col-3 col-md ">Column</div>
+						<div id="boot2" class="col-3">Column</div>
+						<div id="boot3" class="col-3">Column</div>
+			 
+			 
+				</div>
+			 </div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -24,7 +42,7 @@
 					  </div>
 					  
 					  <!-- Use any element to open the sidenav -->
-					  <span onclick="openNav()">open</span>
+					  <span onclick="openNav()"><img id="open" src=https://i.postimg.cc/2qXx3wZQ/logo-MODVIES-02.png>
 					
 							</div>
 					
@@ -39,16 +57,17 @@
 	
 								<!-- Logo -->
 								<div id="logo">
-									<h1 class="title">MOVIES 4 MOODIES</h1>
+									<img id="moodvies" src="https://i.postimg.cc/8FCH13jk/logo-MODVIES-01.png">
+			
 									
 								</div>
 				<!-- HOME SCREEN -->
 						<div id="homescreen">
-							<h1>Hormonal Cycle?</h1>
+							<h2>Hormonal Cycle?</h2>
 							<span class="image main"><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/WOi2Bwvp6hw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
 							<div id= "content">
 							</div>
-							<p>This page is designed for all those who are interested in enjoying a good movie according to their emotional state. The main objective of this page is to raise awareness of the menstrual cycle and the emotional changes that this entails so we show you this short video explaining these stages:</p>
+							<div id="websitedescription">This page was made for women interested in enjoying a good movie. Depending on your emotional state, it will suggest a movie to watch. The main objective of this website is to raise awareness of the menstrual cycle and all the emotional changes it entails. Here is a short video explanation:</div>
 							
 
 							<div>BOTON IR A MOVIES</div>
@@ -110,21 +129,68 @@
 								  </div>
 								  <!-- / marker -->
 						  
-						   
-						  </div>
-						  	<br>
-					</div>
-					</div>
+								</div>
+								<div id="getmoviesbutton">Get Movies</div>
+							</div>
+								<!-- MOVIES SCREEN -->
+							<div id="showMovies"> 
+							
+								<div id="suggestion"></div>
+								<div id="arrow"></div> <!-- FALTA AGREGAR LA FLECHA EN SI -->
+								<select id="select">
+										<option>Select your mood</option>   
+										<option>Down</option>
+										<option>Power Up</option>
+										<option>Do It</option>
+										<option>Appeal</option>
+										<option>Emotional</option>
+										<option>Sensitive</option>
+										<option>Irritable</option>
+										<option>Zen</option>
+								</select>
+							
+								<div id="suggestionresults"></div>
+								<div id="selectresults"></div>
+							</div>
+								
+								<!-- RECOMMENDATIONS -->
+							<div id="recommendations">
+								<img id="friendsimg"src=""><!-- falta agregar imagen entre amigas -->
+								<div id="friendstext">With your friends</div>
+								<div id="lovetext">With your sweetheart</div>
+								<img id="loveimg"src=""><!-- falta agregar imagen pareja -->
+								<div id="firstFriends"></div> <!-- falta agregar textos -->
+								<div id="secondFriends"></div>
+								<div id="thirdFriends"></div>
+								<div id="fourthFriends"></div>
+								<div id="fifthFriends"></div>
+								<div id="sixthFriends"></div>
+								<div id="seventhFriends"></div>
+								<div id="eightFriends"></div>
+								<div id="firstLove"></div>
+								<div id="secondLove"></div>
+								<div id="thirdLove"></div>
+								<div id="fourthLove"></div>
+								<div id="fifthLove"></div>
+								<div id="sixthLove"></div>
+								<div id="seventhFLove"></div>
+								<div id="eightLove"></div>
+								
+							</div>
+							<!-- RESOURCES (queda pendiente agregar pedazo de Caro)-->
+							<div id="resources">
+							</div>
+				
 				
 				<!-- Footer -->
 					<footer id="footer">
-						<div>boton</div>
-						<div>boton</div>	
-						<div>boton</div>
-						<div>boton</div>
-						<div>boton</div>
-						<div>¿como te sientes hoy?</div>
-						
+						<nav>
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-twitter-square"></i>	
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-pinterest-square"></i>
+				
+						</nav>
 				
 					</footer>
 
