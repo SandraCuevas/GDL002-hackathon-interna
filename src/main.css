@@ -1,9 +1,32 @@
-img {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	height: auto;
-	overflow:hidden;
-	align-content: center;
-	border: none;
-	}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto", sans-serif;}
+ body{
+   padding: none;
+    }
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+#video {
+    max-width: 100%;
+        width: 100%;
+  }
+  .logoInicio{
+    max-width: 100%;
+    text-align: right;
+  }
+  .linea{
+    float: left;
+  }
+  .img{
+    width: 100px;
+  }
